@@ -3,7 +3,7 @@ import { createDatabaseConnection, closeDatabaseConnection } from './database';
 import { populateDB } from './acronyms/acronym.controller';
 
 startServer();
-createDatabaseConnection();
+// createDatabaseConnection();
 // populateDB();
 async function exitGracefully() {
     await closeDatabaseConnection();
