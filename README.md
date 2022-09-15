@@ -129,3 +129,59 @@ Running the tests will instantiate a separate Apollo Server and a database for t
     npm run test:update
 
 Since MongoDB relies on unique identifiers to avoid collisions, tests that involve foreign keys would systematically fail (snapshots would never match). Therefore, the test database relies on traditional auto-incrementing identifiers instead. The production database still relies on unique identifiers.
+
+# Write your query or mutation here
+
+# query
+
+# {
+
+# acronyms
+
+# {
+
+# acronym
+
+# definition
+
+# }
+
+# }
+
+# mutation {
+
+# addAcronym(acronym: "hhh", definition:"333"){
+
+# acronym
+
+# definition
+
+# }
+
+# }
+
+# mutation{
+
+# updateAcronym(acronym: "hhh", updateAcronym: "hh1", updateDefinition:"huhuhu")
+
+# {
+
+# acronym
+
+# definition
+
+# }
+
+# }
+
+# mutation{
+
+# removeAcronym(acronym: "hhh"){
+
+# acronym
+
+# definition
+
+# }
+
+# }

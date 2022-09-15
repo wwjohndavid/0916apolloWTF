@@ -3,8 +3,9 @@
     "version": "0.0.1",
     "description": "🌿 A template to create an Apollo Server with MongoDB.",
     "main": "index.js",
+    
     "scripts": {
-        "start": "concurrently --kill-others \"npm run start:service\" \"npm run start:db\"",
+        "start": "concurrently --kill-others \"npm run start:service\"",
         "start:service": "nodemon --signal SIGHUP -r esm src",
         "start:db": "mongod --dbpath=/data",
         "start:db:quiet": "mongod --dbpath=/data --quiet",

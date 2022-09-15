@@ -7,7 +7,7 @@ export const schema = new mongoose.Schema(
             type: String,
             enum: ['ADMIN', 'USER'],
             default: 'USER',
-            required: [true, 'User role is required.']
+            required: [false, 'User role is required.']
         },
         pinCode: {
             type: String,
@@ -18,7 +18,7 @@ export const schema = new mongoose.Schema(
         },
         organizationId: {
             type: castId(),
-            required: [true, 'Organization identifier is required.']
+            required: [false, 'Organization identifier is required.']
         }
     },
     {

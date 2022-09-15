@@ -1,7 +1,7 @@
 import { ApolloServer } from 'apollo-server';
-import { mergeSchemas } from 'graphql-tools';
 import schemas from './schema.js';
 import resolvers from './resolvers.js';
+import { mergeSchemas } from 'graphql-tools';
 import { getConfig } from './util';
 
 const schema = mergeSchemas({

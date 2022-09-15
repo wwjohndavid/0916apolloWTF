@@ -12,6 +12,7 @@ export const getFields = `
 export const createFields = `
     role: UserRole!
     pinCode: String!
+    organizationId: String!
 `;
 
 export const updateFields = `

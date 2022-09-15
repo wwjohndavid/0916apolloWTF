@@ -1,3 +1,3 @@
 import user from './user/user.resolver.js';
-
-export default [user];
+import acronym from './acronyms/graphql/acronym.resolver.js';
+export default [user, acronym];

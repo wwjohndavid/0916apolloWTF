@@ -1,5 +1,6 @@
 import { gql } from 'apollo-server';
 import user from './user/user.schema.js';
+import acronym from './acronyms/graphql/acronym.schema.js';
 
 const sharedSchema = gql`
     enum UserRole {
@@ -8,4 +9,4 @@ const sharedSchema = gql`
     }
 `;
 
-export default [sharedSchema, user];
+export default [sharedSchema, user, acronym];
