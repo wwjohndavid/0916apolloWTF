@@ -6,7 +6,7 @@
     
     "scripts": {
         "start": "concurrently --kill-others \"npm run start:service\"",
-        "start:service": "nodemon --signal SIGHUP -r esm src",
+        "start:service": "NODE_ENV=dev nodemon -r esm src",
         "start:db": "mongod --dbpath=/data",
         "start:db:quiet": "mongod --dbpath=/data --quiet",
         "test": "jest",
