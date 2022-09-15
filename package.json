@@ -29,6 +29,9 @@
         "jest": "^25.1.0",
         "mongoose-sequence": "^5.2.2"
     }
-   
+    ,
+   "engines": {
+    "node": "15.14.0"
+    }
     
 }
